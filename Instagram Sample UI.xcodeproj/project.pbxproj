@@ -13,6 +13,9 @@
 		7729B2AC2A0B0DBE00022648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7729B2AA2A0B0DBE00022648 /* Main.storyboard */; };
 		7729B2AE2A0B0DC000022648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7729B2AD2A0B0DC000022648 /* Assets.xcassets */; };
 		7729B2B12A0B0DC000022648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7729B2AF2A0B0DC000022648 /* LaunchScreen.storyboard */; };
+		7729B2B92A0B226C00022648 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729B2B82A0B226C00022648 /* PostCollectionViewCell.swift */; };
+		7729B2BB2A0C22A600022648 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729B2BA2A0C22A600022648 /* Post.swift */; };
+		7729B2BD2A0C22EF00022648 /* PostModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729B2BC2A0C22EF00022648 /* PostModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7729B2AD2A0B0DC000022648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7729B2B02A0B0DC000022648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7729B2B22A0B0DC000022648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7729B2B82A0B226C00022648 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		7729B2BA2A0C22A600022648 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7729B2BC2A0C22EF00022648 /* PostModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				7729B2A42A0B0DBE00022648 /* AppDelegate.swift */,
 				7729B2A62A0B0DBE00022648 /* SceneDelegate.swift */,
-				7729B2A82A0B0DBE00022648 /* ViewController.swift */,
-				7729B2AA2A0B0DBE00022648 /* Main.storyboard */,
+				7729B2BE2A0C344200022648 /* Modal */,
+				7729B2BF2A0C344D00022648 /* View */,
+				7729B2C02A0C345A00022648 /* Controller */,
 				7729B2AD2A0B0DC000022648 /* Assets.xcassets */,
 				7729B2AF2A0B0DC000022648 /* LaunchScreen.storyboard */,
 				7729B2B22A0B0DC000022648 /* Info.plist */,
 			);
 			path = "Instagram Sample UI";
+			sourceTree = "<group>";
+		};
+		7729B2BE2A0C344200022648 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				7729B2BA2A0C22A600022648 /* Post.swift */,
+				7729B2BC2A0C22EF00022648 /* PostModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		7729B2BF2A0C344D00022648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7729B2AA2A0B0DBE00022648 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7729B2C02A0C345A00022648 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7729B2A82A0B0DBE00022648 /* ViewController.swift */,
+				7729B2B82A0B226C00022648 /* PostCollectionViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7729B2B92A0B226C00022648 /* PostCollectionViewCell.swift in Sources */,
 				7729B2A92A0B0DBE00022648 /* ViewController.swift in Sources */,
 				7729B2A52A0B0DBE00022648 /* AppDelegate.swift in Sources */,
+				7729B2BD2A0C22EF00022648 /* PostModal.swift in Sources */,
 				7729B2A72A0B0DBE00022648 /* SceneDelegate.swift in Sources */,
+				7729B2BB2A0C22A600022648 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
